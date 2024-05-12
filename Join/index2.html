@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>セキュリティサークル</title>
+	<style id="app">
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			padding: 20px;
+      font-size: 24px;
+      background-image: url("セキュリティ2.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat; 
+		}
+		h1 {
+			color: #ffffff;
+      font-size: 36px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+		p {
+			color: #ffffff;
+			margin-bottom: 20px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+      font-size: 16px; 
+		}
+	</style>
+</head>
+<body>
+	<h1>私たちはセキュリティサークルです！</h1>
+	<p>みんなで一緒に情報セキュリティについて勉強しよう!</p>
+  <p>アットホームなサークルです‼</p>
+  <p>就職にも有利!!GPA53万も夢じゃない!!!</p>
+  <p>学校公認なので安心安全！一切リスクなし！</p>
+  <p>週休６日！残業なし！</p>
+	<button onclick="playSoundAndNavigate('join.html')">入会はこちらから</button>
+
+	
+	<script>
+	function playSound() {
+		const audio = new Audio('one-sound.mp3');
+		audio.volume = 0.05;
+		audio.play();
+	}
+	
+	function playSoundAndNavigate(destination) {
+		playSound(); 
+		setTimeout(() => {
+			window.location.href = destination; 
+		}, 3000); 
+	}
+	</script>
+	</body>
+</html>

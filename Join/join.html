@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>入会完了</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <style>
+  .title{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+#body{
+    padding: 20px;             
+    text-align:  center;       
+    background-color:  #7a2222;  
+    height: 100px;             
+}
+.text-box{
+    padding: 20px;             
+    text-align:  center;       
+    background-color:  #ddd;  
+    height:              100px;             
+    text-align: center;
+}
+.Countdown-container p {
+  display: inline-block;
+  margin-right: 10px; 
+  font-size: 50px;
+}
+
+ </style>
+</head>
+<body>
+ <section class="hero is-warning">
+   <div class="hero-body">
+     <div id="app">
+       <div class="container">
+         <p class="title">入会完了</p>
+         <p class="is-size-3">あなたは大和大学セキュリティサークルに入会しました。</p>
+         <p class="is-size-3 has-text-danger">本日中に<span class="has-text-weight-bold">5000兆円</span>お支払いください。</p>
+         <p class="is-size-3 has-text-danger">支払いが確認できない場合はハンムラビ法典に則り<span class="has-text-weight-bold">法的処置</span>をとらせていただきます。</p>
+         <div class="notification is-danger" >
+            <div clss="Countdown">
+            <div class="Countdown-container" style="vertical-align: middle;">
+              <p class="is-size-2 has-text-centered">残り</p>
+              <p class="Time"><span id="hour"></span>時間</p>
+              <p class="Time"><span id="min"></span>分</p>
+              <p class="Time"><span id="sec"></span>秒</p>
+            </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <section class="section">
+   <div class="container">
+     <h2 class="title">お問い合わせ</h2>
+     <table class="table is-striped is-fullwidth">
+       <tr>
+         <td>電話番号</td>
+         <td>06-6385-8010</td>
+       </tr>
+       <tr>
+         <td>メールアドレス</td>
+         <td>admaster@yamato-univ.jp</td>
+       </tr>
+     </table>
+     <h2 class="title">お振込先</h2>
+     <table class="table is-striped is-fullwidth">
+       <tr>
+         <td>銀行名（銀行コード）</td>
+         <td>大和銀行（1111）</td>
+       </tr>
+       <tr>
+         <td>支店名（支店コード）</td>
+         <td>吹田支店（111）</td>
+       </tr>
+       <tr>
+         <td>種別</td>
+         <td>普通預金</td>
+       </tr>
+       <tr>
+         <td>口座番号</td>
+         <td>11111111</td>
+       </tr>
+     </table>
+   </div>
+ </section>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script type="text/javascript" src="join.js"></script>
+</body>
+</html>
